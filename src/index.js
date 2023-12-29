@@ -66,25 +66,25 @@ const renderImg = (data) => {
 
     switch (data.weather[0].main) {
         case "Clouds":
-            weatherImg.src = "images/clouds.png";
+            weatherImg.src = "./images/clouds.png";
             break;
         case "Clear":
-            weatherImg.src = "images/clear.png";
+            weatherImg.src = "./images/clear.png";
             break;
         case "Rain":
-            weatherImg.src = "images/rain.png";
+            weatherImg.src = "./images/rain.png";
             break;
         case "Drizzle":
-            weatherImg.src = "images/drizzle.png";
+            weatherImg.src = "./images/drizzle.png";
             break;
         case "Mist":
-            weatherImg.src = "images/mist.png";
+            weatherImg.src = "./images/mist.png";
             break;
         case "Snow":
-            weatherImg.src = "images/snow.png";
+            weatherImg.src = "./images/snow.png";
             break;
         default:
-            weatherImg.src = "images/mist.png";
+            weatherImg.src = "./images/mist.png";
             break;
     }
 }
