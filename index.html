@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clima App</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./src/style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <div class="card">
+        <div class="search">
+            <input type="text" id="city-input" placeholder="Digite uma cidade">
+
+            <button id="btn-search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+
+        <div class="error-message hide">
+            <p>Localidade não encontrada!</p>
+        </div>
+
+        <div class="weather hide">
+            <img src="" alt="" class="weather-img">
+            <h1 class="temperature"></h1>
+            <h2 class="city-name">New York</h2>
+            <div class="description">
+                <div class="desc-details">
+                    <i class="fa-solid fa-droplet"></i>
+                    <div>
+                        <p><span id="humidity"></span>%</p>
+                        <p>Umidade</p>
+                    </div>
+                </div>
+                <div class="desc-details">
+                    <i class="fa-solid fa-wind"></i>
+                    <div>
+                        <p><span id="wind"></span> km/h</p>
+                        <p>Vel. vento</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <script type="module" src="./src/index.js"></script>
+</body>
+</html>

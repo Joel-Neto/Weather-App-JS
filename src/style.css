@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.hide {
+    display: none;
+}
+
+body {
+    background-color: #222;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    width: 90%;
+    max-width: 470px;
+    background-image: linear-gradient(135deg, #00feba, #5b548a);
+    color: #fff;
+    margin: 50px auto;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+}
+
+.search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search input {
+    border: 0;
+    outline: 0;
+    background-color: #ebfffc;
+    color: #555;
+    padding: 10px 20px;
+    height: 60px;
+    border-radius: 30px;
+    width: 100%;
+    margin-right: 16px;
+    font-size: 18px;
+}
+
+.search button {
+    border: 0;
+    outline: 0;
+    background-color: #ebfffc;
+    border-radius: 50%;
+    min-width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.search button:active {
+    filter: brightness(0.9);
+}
+
+.search button i {
+    font-size: 1.1rem;
+    color: #555;
+
+}
+
+.search input, .search button {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.200);
+}
+
+.error-message {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: .5px;
+}
+
+.weather-img {
+    width: 170px;
+    margin-top: 30px;
+}
+
+.weather h1 {
+    font-size: 70px;
+    font-weight: 500;
+}
+
+.weather h2 {
+    font-size: 40px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+
+.description {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    padding: 0 20px;
+}
+
+.description .desc-details {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.desc-details i {
+    font-size: 35px;
+    margin-right: 12px;
+}
+
+.desc-details div p:first-child {
+    font-size: 22px;
+}
+
+@media (max-width: 470px) {
+    .description .desc-details {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .desc-details i {
+        font-size: 25px;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 415px) {
+
+    .card {
+        padding: 30px 15px
+    }
+
+    .search {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .search input {
+        margin-right: 0;
+        margin-bottom: 25px;
+    }
+
+    .weather h1 {
+        font-size: 55px;
+    }
+    
+    .weather h2 {
+        font-size: 30px;
+        font-weight: 400;
+        margin-top: -10px;
+    }
+}
+
+@media (max-width: 350px) {
+    .description {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
